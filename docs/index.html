@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ZolaTech</title>
+    <link href="/index.61d3354a.css" rel="stylesheet">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css" rel="stylesheet">
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body class="font-[Roboto]">
+    <!-- Header -->
+    <header>
+      <!-- Navbar -->
+      <section>
+        <!-- Top Nofiication -->
+        <section class="bg-primary h-[50px] grid content-center">
+          <div class="text-sm md:text-[14px] lg:text-[16px] flex justify-between px-[50px] md:flex md:justify-between md:px-[100px] lg:flex lg:justify-between lg:w-[1440px] lg:mx-auto lg:px-[100px]">
+            <div>
+              <p class="text-white">Welcome to ZolaTech Store</p>
+            </div>
+            <div>
+              <a href="#" class="text-white">My Account</a>
+            </div>
+          </div>
+        </section>
+        <!-- Search Bar -->
+        <section>
+          <div class="px-[50px] mt-[15px] flex justify-between items-center gap-2 lg:w-[1440px] lg:mx-auto lg:px-[100px]">
+            <div>
+              <img src="/blue-small.e1d664d2.png" alt="" class="h-[30px] lg:h-[40px]">
+            </div>
+            <div>
+              <form class="max-w-md mx-auto">
+                <div class="relative w-full">
+                  <input type="search" id="location-search" class="sm:w-[300px] md:w-[350px] block lg:p-2.5 lg:w-[420px] z-20 text-sm text-gray-900 border-grey-50 border-s-2 border border-gray-300 focus:ring-blue-500 focus:border-blue-500" placeholder="Search..." required="">
+                  <button type="submit" class="absolute top-0 end-0 sm:w-[80px] lg:w-[150px] h-full p-2.5 text-sm font-medium text-white bg-blue-600 border border-primary hover:bg-primary focus:ring-4 focus:outline-none focus:ring-blue-300">
+                    <span>Search</span>
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="hidden sm:text-[30px] lg:text-3xl lg:flex items-center">
+              <i class="bx bx-cart-alt p-0 lg:px-[10px]"></i>
+              <i class="bx bx-heart p-[5px] lg:px-[10px]"></i>
+            </div>
+          </div>
+        </section>
+        <!-- Menu Bar -->
+        <section class="mt-[15px] bg-primary relative lg:flex lg:justify-center">
+          <nav class="px-[50] lg:w-[1440px] lg:mx-auto lg:px-[100px] text-white flex">
+            <div class="flex justify-start items-center h-[50px] pl-2">
+              <!-- Logo or Home link -->
+              <!-- <a href="#" class="font-bold text-xl">Home</a> -->
+
+              <!-- Navigation links -->
+              <div class="bg-text w-[290px] hidden lg:flex lg:justify-between items-center mr-3 p-2">
+                <h1>CATEGORIES</h1>
+                <i class="bx bx-menu text-2xl"></i>
+              </div>
+              <div class="hidden lg:flex lg:items-center space-x-4">
+                <a href="#" class="nav-link pl-2 hover:text-highlight hover:underline">HOME</a>
+                <a href="/shop.html" class="nav-link pl-2 hover:text-highlight hover:underline">SHOP</a>
+                <a href="#" class="nav-link pl-2 hover:text-highlight hover:underline">COLLECTION</a>
+                <a href="#" class="nav-link pl-2 hover:text-highlight hover:underline">BLOG</a>
+                <a href="#" class="nav-link pl-2 hover:text-highlight hover:underline">PAGES</a>
+              </div>
+
+              <!-- Responsive navigation button for small screens -->
+              <div class="lg:hidden">
+                <!-- Hamburger icon for mobile -->
+                <button id="mobile-menu-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewbox="0 0 24 24" stroke="currentColor" class="h-6 w-6 text-white">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                  </svg>
+                </button>
+
+                <!-- Mobile menu -->
+                <div id="mobile-menu" class="hidden absolute top-[55px] left-[50px] bg-primary w-48 mt-1 py-2">
+                  <div class="bg-text px-4 py-2 flex justify-between items-center p-3 md:hidden sm:hidden">
+                    <h1>CATEGORIES</h1>
+                    <i class="bx bx-menu text-2xl"></i>
+                  </div>
+                  <a href="#" class="block px-4 py-2 text-white hover:bg-white hover:text-primary">Home</a>
+                  <a href="#" class="block px-4 py-2 text-white hover:bg-white hover:text-primary">Shop</a>
+                  <a href="#" class="block px-4 py-2 text-white hover:bg-white hover:text-primary">Collection</a>
+                  <a href="#" class="block px-4 py-2 text-white hover:bg-white hover:text-primary">Blogs</a>
+                  <a href="#" class="block px-4 py-2 text-white hover:bg-white hover:text-primary">Pages</a>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </section>
+      </section>
+      <!-- Hero Section -->
+      <section class="flex justify-center lg:bg-gray-100">
+        <div class="h-fit w-[1440px] mx-auto px-[100px] grid grid-cols-1 md:grid-cols-1 lg:grid-cols-2">
+          <div class="sm:w-fit md:w-fit lg:w-[720px]">
+            <img src="/hero.fc2efe73.png" alt="" class="w-fit md:w-fit lg:h-[460px]">
+          </div>
+          <div class="sm:w-fit md:w-fit lg:w-[720px] mx-auto flex flex-col justify-center my-[10px]">
+            <h1 class="sm:text-3xl md:text-4xl lg:text-5xl text-primary font-bold lg:p-[10px]">
+              LAPTOP FOR THE FUTURE
+            </h1>
+            <p class="md:text-xl lg:text-2xl my-[10px]">
+              The new 18 inches bezeless display offering a 4K <br>display
+              with smart screen
+            </p>
+            <div class="my-[10px]">
+              <button class="bg-secondary hover:bg-green-600 font-bold w-[132px] h[44px] p-[10px] m-[5px]">
+                SHOP NOW
+              </button>
+              <button class="bg-accent hover:bg-red-700 font-bold text-white w-[132px] h[44px] p-[10px] m-[5px]">
+                ADD TO CART
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+    <!-- Content -->
+    <main>
+      <!-- Categories -->
+      <section class="grid grid-cols-1 items-center lg:w-[1440px] mx-auto mt-[40px]">
+        <h1 class="text-4xl text-center font-bold underline decoration-primary mb-[43px]">
+          TOP CATEGORIES
+        </h1>
+        <div class="grid grid-cols-1 gap-5 md:grid-cols-2 lg:grid-cols-4 mx-auto md:gap-[40px] lg:gap-[77px]">
+          <div class="bg-white w-[205px] h-fit px-[12px] py-[24px] flex flex-col justify-center items-center border hover:drop-shadow-xl">
+            <img src="/camera.2ae52869.png" alt="" class="w-[180px] h-[180px]">
+            <h1 class="text-[14px] font-normal mt-[16px]">Camera</h1>
+          </div>
+          <div class="bg-white w-[205px] h-fit px-[12px] py-[24px] flex flex-col items-center border hover:drop-shadow-xl">
+            <img src="/imac.cba75eba.jpg" alt="" class="w-[180px] h-[180px]">
+            <h1 class="text-[14px] font-normal mt-[16px]">Computer & Laptop</h1>
+          </div>
+          <div class="bg-white w-[205px] h-fit px-[12px] py-[24px] flex flex-col items-center border hover:drop-shadow-xl">
+            <img src="/s24-ultra.92e764e3.png" alt="" class="w-[180px] h-[180px]">
+            <h1 class="text-[14px] font-normal mt-[16px]">Smartphone</h1>
+          </div>
+          <div class="bg-white w-[205px] h-fit px-[12px] py-[24px] flex flex-col items-center border hover:drop-shadow-xl">
+            <img src="/headphones-beats-pro-beats-dre-22.570afec8.png" alt="" class="w-fit h-[180px]">
+            <h1 class="text-[14px] font-normal mt-[16px]">Accessories</h1>
+          </div>
+        </div>
+      </section>
+      <!-- Trending Products -->
+      <section class="grid grid-cols-1 items-center lg:w-[1440px] mx-auto mt-[40px]">
+        <h1 class="text-4xl text-center font-bold underline decoration-primary mb-[43px]">
+          TRENDING COLLECTION
+        </h1>
+        <!-- Group of Cards -->
+        <div class="lg:w-[1440px] px-[50px] lg:px-[100px] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row">
+          <!-- Card Products -->
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/s24-ultra.92e764e3.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  Samsung Galaxy S24 Ultra
+                </p>
+                <p class="text-highlight">$1,599.00</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/Monitor-DELL-E2216H-300x300-2.ea12a1d5.jpg" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  DELL 21.5 inch Full HD Monitor (E2216HV)
+                </p>
+                <p class="text-highlight">$442.12</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/iphone15-pro.9a6e052a.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  Apple IPhone 15 Pro Max Natural Titanium
+                </p>
+                <p class="text-highlight">$1,089.00</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/sony-speaker.29467182.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  Sony SRS-XV800 Wireless Party Speaker
+                </p>
+                <p class="text-highlight">$599.00</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/galaxy-watch6.1e3a9646.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  Galaxy Watch6 Thom Browne Edition
+                </p>
+                <p class="text-highlight">$599.00</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/honor-magic.65f765ab.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  HONOR Magic V2 5G
+                </p>
+                <p class="text-highlight">$1,499.00</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/sony-sa.01d7ea2f.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  Sony SA-RS3S Total 100W Additional Wireless Rear
+                </p>
+                <p class="text-highlight">$299.00</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/oneplus-open.4f21dda3.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  OnePlus Open (Global)
+                </p>
+                <p class="text-highlight">$1,299.00</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+      <!-- Special Products -->
+      <section class="grid grid-cols-1 items-center lg:w-[1440px] mx-auto mt-[40px]">
+        <h1 class="text-4xl text-center font-bold underline decoration-primary mb-[43px]">
+          SPECIAL PRODUCTS
+        </h1>
+        <!-- Group of Cards -->
+        <div class="lg:w-[1440px] px-[50px] lg:px-[100px] grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 grid-flow-row">
+          <!-- Card Products -->
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/red-smart-watch.b0143669.jpg" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  Apple Watch Series 8 45mm GPS Red
+                </p>
+                <p class="text-highlight">$355.00</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/huawei-watch-gt4.65b3f85e.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  HUAWEI WATCH GT 4 41mm Gold Limited Edition
+                </p>
+                <p class="text-highlight">$239.00</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/huawei-watch-ultimate.98afb650.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  Huawei Watch Ultimate Design Limited Gold Edition
+                </p>
+                <p class="text-highlight">$2,699.00</p>
+              </div>
+            </div>
+          </a>
+          <a href="/detail.html">
+            <div class="w-[248px] h-fit group border mb-[37px] m-auto">
+              <div class="relative overflow-hidden">
+                <img src="/galaxy-z-fold.b1215719.png" alt="">
+                <div class="absolute h-full w-full bg-black/20 flex items-center justify-center -bottom-0 group-hover:bottom-0 opacity-0 group-hover:opacity-100 transition-all duration-300">
+                  <div class="">
+                    <i class="bx bx-heart p-[12px] text-[20px] text-white bg-highlight rounded-full"></i>
+                    <i class="bx bx-cart-alt p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                    <i class="bx bx-show p-[12px] text-[20px] bg-neutral rounded-full"></i>
+                  </div>
+                </div>
+              </div>
+              <div class="h-[100px] flex flex-col justify-between pl-[15px] pb-1">
+                <p class="text-[14px] font-normal mt-[16px]">
+                  Galaxy Z Fold 5 Thom Browne Edition
+                </p>
+                <p class="text-highlight">$3,099.00</p>
+              </div>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer class="w-full h-fit grid grid-cols-1 bg-text">
+      <!-- Content -->
+      <section class="container h-full mx-auto flex justify-center flex-wrap border-1 border-t-white pt-[50px] px-[50px] lg:px-[100px]">
+        <div class="h-fit w-[260px] p-[10px]">
+          <img src="/white-small.39d268b9.png" alt="" class="w-[170px] object-cover pb-[10px]">
+          <p class="text-neutral text-[14px] w-[184px] text-justify pb-[10px]">
+            There are many variations of passages of lorem ipsum available, but
+            the majorited have suffered alteration.
+          </p>
+          <!-- Social Media -->
+          <div class="flex gap-2">
+            <a href="#"><i class="bx bxl-facebook w-[30px] h-[30] text-2xl bg-neutral flex justify-center items-center"></i></a>
+            <a href="#"><i class="bx bxl-twitter w-[30px] h-[30] text-2xl bg-neutral flex justify-center items-center"></i></a>
+            <a href="#"><i class="bx bxl-instagram w-[30px] h-[30] text-2xl bg-neutral flex justify-center items-center"></i></a>
+            <a href="#"><i class="bx bxl-telegram w-[30px] h-[30] text-2xl bg-neutral flex justify-center items-center"></i></a>
+          </div>
+        </div>
+        <div class="h-fit w-[260px] p-[20px] grid grid-cols-1 gap-[20px] text-[14px] text-neutral">
+          <h1 class="font-bold text-[20px]">INFORMATION</h1>
+          <a href="">About us</a>
+          <a href="">Contact us</a>
+          <a href="">Faq's</a>
+          <a href="">My Cart</a>
+          <a href="">Wishlist</a>
+        </div>
+        <div class="h-fit w-[260px] p-[20px] grid grid-cols-1 gap-[20px] text-[14px] text-neutral">
+          <h1 class="font-bold text-[20px]">COMPANY</h1>
+          <a href="">Payment policy</a>
+          <a href="">Privacy policy</a>
+          <a href="">Return policy</a>
+          <a href="">Shipping policy</a>
+          <a href="">Term & condition</a>
+        </div>
+        <div class="h-fit w-[260px] p-[20px] grid grid-cols-1 gap-[20px] text-[14px] text-neutral">
+          <h1 class="font-bold text-[20px]">PRODUCTS</h1>
+          <a href="">New products</a>
+          <a href="">Featured products</a>
+          <a href="">Return policy</a>
+          <a href="">Best sales</a>
+          <a href="">Computer</a>
+        </div>
+        <div class="h-fit w-[260px] p-[20px] grid grid-cols-1 gap-[20px] text-[14px] text-neutral">
+          <h1 class="font-bold text-[20px]">CONTACT US</h1>
+          <div class="flex items-start gap-1">
+            <i class="bx bx-map text-2xl"></i>
+            <p>
+              No. 24, St. 562, Sangkat Boeung kak I,
+              <br>Khan Toul Kork, Phnom Penh, Cambodia
+            </p>
+          </div>
+
+          <div class="flex items-center gap-1">
+            <i class="bx bx-phone text-2xl"></i>
+            <p>099 987 465 / 093 987 465</p>
+          </div>
+          <div class="flex items-center gap-1">
+            <i class="bx bx-envelope text-2xl"></i>
+            <p>demo@demo.com</p>
+          </div>
+        </div>
+      </section>
+      <!-- Copyright -->
+      <div class="h-[70px] grid content-center border-t border-white">
+        <p class="text-[14px] text-neutral font-normal text-center">
+          Copyright © 2023 by ZolaTech
+        </p>
+      </div>
+    </footer>
+  <script src="/Mini-Project.59712999.js"></script></body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="/index.579125c3.js"></script>
+</html>
