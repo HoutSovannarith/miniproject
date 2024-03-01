@@ -165,7 +165,7 @@
                 <!-- Mobile menu -->
                 <div
                   id="mobile-menu"
-                  class="hidden absolute top-[55px] left-[50px] bg-primary w-48 mt-1 py-2"
+                  class="hidden absolute top-[35px] left-[0px] bg-primary w-48 mt-1 py-2"
                 >
                   <div
                     class="bg-text px-4 py-2 flex justify-between items-center p-3 md:hidden sm:hidden"
@@ -179,7 +179,7 @@
                     >Home</a
                   >
                   <a
-                    href="#"
+                    href="./shop.html"
                     class="block px-4 py-2 text-white hover:bg-white hover:text-primary"
                     >Shop</a
                   >
@@ -209,15 +209,17 @@
     <main>
       <!-- Detail -->
       <section
-        class="grid grid-cols-2 w-[1440px] h-fit mx-auto my-4 px-[100px]"
+        class="grid grid-cols-1 lg:grid-cols-2 w-[1440px] h-fit mx-auto my-4 px-[100px]"
       >
         <div class="grid grid-cols-1">
           <div
-            class="w-[570px] h-[420px] bg-white flex justify-center content-center py-4"
+            class="w-[300px] lg:w-[570px] lg:h-[420px] bg-white flex justify-center content-center py-4"
           >
             <img src="./image/product/main.jpg" alt="" class="h-full" />
           </div>
-          <div class="flex justify-between h-[150px] w-[570px] mt-3">
+          <div
+            class="flex gap-1 justify-between h-[150px] w-[300px] lg:w-[570px] mt-3"
+          >
             <div>
               <img
                 src="./image/product/gallery1.jpg"
@@ -250,7 +252,9 @@
         </div>
         <div class="py-4">
           <!-- Title -->
-          <div class="flex justify-between w-[500px] mb-3">
+          <div
+            class="flex justify-between w-[300px] lg:w-[500px] mb-3 break-words break-normal"
+          >
             <h1 class="text-3xl font-semibold">Laptop</h1>
             <div class="text-2xl">
               <i class="bx bx-heart"></i> <i class="bx bx-link-external"></i>
@@ -261,7 +265,7 @@
           </div>
           <div class="mb-3">
             <h1 class="font-bold">Specification</h1>
-            <ul>
+            <ul class="break-normal">
               <li>CPU : Intel Core i7-1360P (13Th)</li>
               <li>Ram : 16GB DDR5</li>
               <li>SSD : 1 TB PCIe SSD M.2</li>
@@ -273,9 +277,11 @@
               <li>Camera : IR HD type (30fps@720p)</li>
               <li>Battery : 82 WH 4-Cell</li>
               <li>
-                Interface : 1x Type-C (USB3.2 Gen2 / DP) with PD3.1 charging ,1x
-                Type-C USB3.2 Gen2 ,1x Type-A USB3.2 Gen2 ,1x Micro SD Card
-                Reader 1x HDMI™ 2.1 (8K @ 60Hz / 4K @ 120Hz)
+                <p class="break-normal break-words w-[300px] lg:w-full">
+                  Interface : 1x Type-C (USB3.2 Gen2 / DP) with PD3.1 charging
+                  ,1x Type-C USB3.2 Gen2 ,1x Type-A USB3.2 Gen2 ,1x Micro SD
+                  Card Reader 1x HDMI™ 2.1 (8K @ 60Hz / 4K @ 120Hz)
+                </p>
               </li>
               <li>Weight : 2 kg</li>
               OS : Windows 11 Home license
@@ -285,9 +291,15 @@
           <div class="3">
             <h1>Colors</h1>
             <div class="flex gap-4 mb-4">
-              <div class="w-[50px] h-[50px] bg-[#C0C0C0]"></div>
-              <div class="w-[50px] h-[50px] bg-[#B76E79]"></div>
-              <div class="w-[50px] h-[50px] bg-[#808080]"></div>
+              <div
+                class="w-[30px] h-[30px] lg:w-[50px] lg:h-[50px] bg-[#C0C0C0]"
+              ></div>
+              <div
+                class="w-[30px] h-[30px] lg:w-[50px] lg:h-[50px] bg-[#B76E79]"
+              ></div>
+              <div
+                class="w-[30px] h-[30px] lg:w-[50px] lg:h-[50px] bg-[#808080]"
+              ></div>
             </div>
           </div>
           <!-- Button -->
@@ -295,7 +307,7 @@
             <div>
               <a href="#">
                 <h1
-                  class="grid grid-cols-1 bg-accent hover:bg-red-800 hover:text-white sm:w-[200px] md:w-[250px] lg:w-[300px] p-4 text-center"
+                  class="grid grid-cols-1 bg-accent hover:bg-red-800 hover:text-white sm:w-[150px] md:w-[250px] lg:w-[300px] p-3 lg:p-4 text-center"
                 >
                   Add to Cart-$237.00
                 </h1>
@@ -303,7 +315,7 @@
             </div>
 
             <div
-              class="flex items-center justify-between p-2 w-[100px] h-[56px] bg-white border border-slate-700"
+              class="flex items-center justify-between p-2 w-[80px] lg:w-[100px] lg:h-[56px] bg-white border border-slate-700"
             >
               <i class="bx bx-minus"></i>
               <p>1</p>
@@ -311,7 +323,7 @@
             </div>
           </div>
           <!-- Description -->
-          <div class="flex gap-9">
+          <div class="flex gap-9 text-sm">
             <p>Free standard shipping</p>
             <p>Free Returns</p>
           </div>
@@ -561,4 +573,6 @@
       </div>
     </footer>
   </body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.js"></script>
+  <script src="./index.js"></script>
 </html>
