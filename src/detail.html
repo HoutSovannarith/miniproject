@@ -5,10 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Details</title>
     <link href="./index.css" rel="stylesheet" />
+    <!-- Tailwind CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: "#004AAD",
+              secondary: "#2ECC71",
+              accent: "#E74C3C",
+              neutral: "#ECF0F1",
+              text: "#333333",
+              highlight: "#F39C12",
+            },
+          },
+        },
+      };
+    </script>
+    <!-- CDN Boxicon -->
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
+    <!-- CDN Flowbite -->
     <link
       href="https://cdnjs.cloudflare.com/ajax/libs/flowbite/2.3.0/flowbite.min.css"
       rel="stylesheet"
